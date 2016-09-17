@@ -73,11 +73,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MvcExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\JavaScriptJsonResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Magicodes.ECharts\Magicodes.ECharts.csproj">
+      <Project>{6F82999D-067D-47DE-ADC4-A73D1F2530C8}</Project>
+      <Name>Magicodes.ECharts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
