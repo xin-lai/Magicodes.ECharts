@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F82999D-067D-47DE-ADC4-A73D1F2530C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Magicodes.ECharts</RootNamespace>
+    <AssemblyName>Magicodes.ECharts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Axis\AxisTypes.cs" />
+    <Compile Include="Axis\NameLocations.cs" />
+    <Compile Include="Axis\XAxis.cs" />
+    <Compile Include="Axis\XAxisPosition.cs" />
+    <Compile Include="Axis\YAxis.cs" />
+    <Compile Include="Axis\YAxisPosition.cs" />
+    <Compile Include="CommonDefinitions\Align.cs" />
+    <Compile Include="CommonDefinitions\Label.cs" />
+    <Compile Include="CommonDefinitions\Orients.cs" />
+    <Compile Include="CommonDefinitions\Symbols.cs" />
+    <Compile Include="CommonDefinitions\TextAlign.cs" />
+    <Compile Include="CommonDefinitions\TextStyles.cs" />
+    <Compile Include="CommonDefinitions\ToolBoxFeature.cs" />
+    <Compile Include="CommonDefinitions\VerticalAlign.cs" />
+    <Compile Include="Components\Legend\Legend.cs" />
+    <Compile Include="Components\Legend\LegendData.cs" />
+    <Compile Include="Components\TimeLine\ControlPositions.cs" />
+    <Compile Include="Components\TimeLine\TimeLine.cs" />
+    <Compile Include="Components\TimeLine\TimeLineTypes.cs" />
+    <Compile Include="Components\Title\Title.cs" />
+    <Compile Include="Components\ToolBox\ToolBox.cs" />
+    <Compile Include="Components\ToolTip\Tooltip.cs" />
+    <Compile Include="Components\ToolTip\TooltipTriggerEvents.cs" />
+    <Compile Include="Components\ToolTip\TooltipTriggerTypes.cs" />
+    <Compile Include="EChartsOptions.cs" />
+    <Compile Include="JsonConverter\ValueConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Series\BarSeries.cs" />
+    <Compile Include="Series\LineSeries.cs" />
+    <Compile Include="Series\Mark\MarkData.cs" />
+    <Compile Include="Series\Mark\MarkLine.cs" />
+    <Compile Include="Series\Mark\MarkPoint.cs" />
+    <Compile Include="Series\Mark\MarkPointDataTypes.cs" />
+    <Compile Include="Series\Series.cs" />
+    <Compile Include="Series\SeriesTypes.cs" />
+    <Compile Include="TimelineOptions.cs" />
+    <Compile Include="ValueTypes\AlignValue.cs" />
+    <Compile Include="ValueTypes\DoubleValue.cs" />
+    <Compile Include="ValueTypes\IBottomValue.cs" />
+    <Compile Include="ValueTypes\ILeftValue.cs" />
+    <Compile Include="ValueTypes\IRightValue.cs" />
+    <Compile Include="ValueTypes\ISymbolValue.cs" />
+    <Compile Include="ValueTypes\ITopValue.cs" />
+    <Compile Include="ValueTypes\IValue.cs" />
+    <Compile Include="ValueTypes\NumberValue.cs" />
+    <Compile Include="ValueTypes\StringValue.cs" />
+    <Compile Include="ValueTypes\SymbolValue.cs" />
+    <Compile Include="ValueTypes\VerticalAlignValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

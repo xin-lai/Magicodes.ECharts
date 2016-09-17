@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.ECharts", "Magicodes.ECharts.csproj", "{6F82999D-067D-47DE-ADC4-A73D1F2530C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.ECharts.Mvc", "..\Magicodes.ECharts.Mvc\Magicodes.ECharts.Mvc.csproj", "{13B71970-1B8B-47D9-8105-ED3359E848D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F82999D-067D-47DE-ADC4-A73D1F2530C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F82999D-067D-47DE-ADC4-A73D1F2530C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F82999D-067D-47DE-ADC4-A73D1F2530C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F82999D-067D-47DE-ADC4-A73D1F2530C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B71970-1B8B-47D9-8105-ED3359E848D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B71970-1B8B-47D9-8105-ED3359E848D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B71970-1B8B-47D9-8105-ED3359E848D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B71970-1B8B-47D9-8105-ED3359E848D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
