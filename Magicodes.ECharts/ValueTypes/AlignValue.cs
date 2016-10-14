@@ -15,6 +15,8 @@
 
 using Magicodes.ECharts.CommonDefinitions;
 using Magicodes.ECharts.JsonConverter;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Magicodes.ECharts.ValueTypes
 {

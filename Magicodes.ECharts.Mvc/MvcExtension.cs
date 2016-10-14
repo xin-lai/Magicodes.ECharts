@@ -14,6 +14,7 @@
 // ======================================================================
 
 using Magicodes.ECharts.Mvc.Results;
+using System.Web.Mvc;
 
 namespace Magicodes.ECharts.Mvc
 {

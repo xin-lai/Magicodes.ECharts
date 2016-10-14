@@ -17,6 +17,8 @@ using System.Collections.Generic;
 using Magicodes.ECharts.Axis;
 using Magicodes.ECharts.CommonDefinitions;
 using Magicodes.ECharts.ValueTypes;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Magicodes.ECharts.Components.TimeLine
 {

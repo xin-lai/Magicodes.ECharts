@@ -13,6 +13,7 @@
 //  
 // ======================================================================
 
+using System;
 using Magicodes.ECharts.Axis;
 using Magicodes.ECharts.Components.Legend;
 using Magicodes.ECharts.Components.TimeLine;
@@ -71,5 +72,6 @@ namespace Magicodes.ECharts
         ///     系列列表
         /// </summary>
         public Series.Series[] Series { get; set; }
+
     }
 }

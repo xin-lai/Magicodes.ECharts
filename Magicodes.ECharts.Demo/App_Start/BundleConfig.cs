@@ -11,6 +11,9 @@ namespace Magicodes.ECharts.Demo
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+                        "~/Scripts/knockout-{version}.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -31,7 +34,7 @@ namespace Magicodes.ECharts.Demo
             bundles.Add(new ScriptBundle("~/plugins/echarts").Include(
                 "~/Scripts/plugins/echart/echarts.js",
                 "~/Scripts/plugins/echart/theme/macarons.js",
-                "~/Scripts/app/components/echart.js"));
+                "~/Scripts/components/magicodes.echart.js"));
         }
     }
 }

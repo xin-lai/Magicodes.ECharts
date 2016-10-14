@@ -17,6 +17,8 @@ using System.ComponentModel;
 using Magicodes.ECharts.CommonDefinitions;
 using Magicodes.ECharts.Components.ToolTip;
 using Magicodes.ECharts.ValueTypes;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Magicodes.ECharts.Components.Legend
 {

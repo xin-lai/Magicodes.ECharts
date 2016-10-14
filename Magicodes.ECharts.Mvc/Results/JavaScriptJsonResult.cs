@@ -13,7 +13,10 @@
 //  
 // ======================================================================
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
+using System.Web.Mvc;
 
 namespace Magicodes.ECharts.Mvc.Results
 {

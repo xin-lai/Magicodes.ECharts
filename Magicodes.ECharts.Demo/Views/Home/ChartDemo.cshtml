@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Magicodes.ECharts";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Demo</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/home/UserAreaChart" ,theme:"macarons"}}' style="height: 280px; width: 100%"></div>
+    </div>
+    <div class="col-md-6">
+        <h2>官方博客</h2>
+        @*<p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>*@
+        <p><a class="btn btn-default" href="http://www.cnblogs.com/codelove/">点此访问 &raquo;</a></p>
+    </div>
+</div>
+@section Scripts
+{
+    <script>
+        $(function () {
+            ko.applyBindings({});
+        });
+    </script>
+}
