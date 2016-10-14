@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using Magicodes.ECharts.CommonDefinitions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Magicodes.ECharts.ValueTypes;
 
 namespace Magicodes.ECharts.Axis
 {
@@ -57,5 +58,23 @@ namespace Magicodes.ECharts.Axis
         ///     坐标轴刻度标签的相关设置。
         /// </summary>
         public Label AxisLabel { get; set; }
+
+        /// <summary>
+        /// 坐标轴刻度最大值，在类目轴中无效。
+        /// 可以设置成特殊值 'dataMax'，此时取数据在该轴上的最大值作为最大刻度。
+        /// 不设置时会自动计算最大值保证坐标轴刻度的均匀分布。
+        /// </summary>
+        public INumberOrStringValue Max { get; set; }
+
+        /// <summary>
+        /// y 轴所在的 grid 的索引，默认位于第一个 grid。
+        /// </summary>
+        public double? GridIndex { get; set; }
+
+        /// <summary>
+        /// 是否是反向坐标轴。ECharts 3 中新加。
+        /// </summary>
+
+        public bool? Inverse { get; set; }
     }
 }

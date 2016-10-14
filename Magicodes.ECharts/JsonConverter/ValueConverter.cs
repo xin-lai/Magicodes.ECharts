@@ -16,6 +16,7 @@
 using System;
 using Magicodes.ECharts.ValueTypes;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace Magicodes.ECharts.JsonConverter
 {
@@ -25,6 +26,18 @@ namespace Magicodes.ECharts.JsonConverter
         {
             var iv = value as IValue<T>;
             if (iv == null) return;
+            //如果是字符串数组
+            if (iv.Value is double[])
+            {
+                var values = iv.Value as double[];
+                var sb = new StringBuilder("[");
+                foreach (var item in values)
+                {
+                    sb.Append(item).Append(",");
+                }
+                writer.WriteValue(sb.ToString().TrimEnd(',') + "]");
+                return;
+            }
             writer.WriteValue(iv.Value.ToString());
         }
 
@@ -32,7 +45,7 @@ namespace Magicodes.ECharts.JsonConverter
             JsonSerializer serializer)
         {
             var obj = Activator.CreateInstance(objectType) as IValue<T>;
-            obj.Value = (T) reader.Value;
+            obj.Value = (T)reader.Value;
             return obj;
         }
 

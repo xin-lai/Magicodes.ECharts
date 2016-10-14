@@ -64,8 +64,17 @@ namespace Magicodes.ECharts.Series
         public MarkLine MarkLine { get; set; }
 
         /// <summary>
-        ///     对应yAxis数组里的对应的坐标 默认0
+        /// 使用的 x 轴的 index，在单个图表实例中存在多个 x 轴的时候有用。
         /// </summary>
-        public int YAxisIndex { get; set; }
+        public double? XAxisIndex { get; set; }
+
+        /// <summary>
+        /// 使用的 y 轴的 index，在单个图表实例中存在多个 y轴的时候有用。
+        /// </summary>
+        public double? YAxisIndex { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Radius { get; set; }
     }
 }

@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Axis\AxisLine.cs" />
     <Compile Include="Axis\AxisTypes.cs" />
+    <Compile Include="Axis\LineStyle.cs" />
+    <Compile Include="Axis\LineStyleTypes.cs" />
     <Compile Include="Axis\NameLocations.cs" />
     <Compile Include="Axis\XAxis.cs" />
     <Compile Include="Axis\XAxisPosition.cs" />
@@ -58,6 +61,8 @@
     <Compile Include="CommonDefinitions\TextStyles.cs" />
     <Compile Include="CommonDefinitions\ToolBoxFeature.cs" />
     <Compile Include="CommonDefinitions\VerticalAlign.cs" />
+    <Compile Include="Components\DataZoom\DataZoom.cs" />
+    <Compile Include="Components\Grid\Grid.cs" />
     <Compile Include="Components\Legend\Legend.cs" />
     <Compile Include="Components\Legend\LegendData.cs" />
     <Compile Include="Components\TimeLine\ControlPositions.cs" />
@@ -81,9 +86,12 @@
     <Compile Include="Series\SeriesTypes.cs" />
     <Compile Include="TimelineOptions.cs" />
     <Compile Include="ValueTypes\AlignValue.cs" />
+    <Compile Include="ValueTypes\ArrayNumberValue.cs" />
     <Compile Include="ValueTypes\DoubleValue.cs" />
     <Compile Include="ValueTypes\IBottomValue.cs" />
     <Compile Include="ValueTypes\ILeftValue.cs" />
+    <Compile Include="ValueTypes\INumberOrArrayNumberValue.cs" />
+    <Compile Include="ValueTypes\INumberOrStringValue.cs" />
     <Compile Include="ValueTypes\IRightValue.cs" />
     <Compile Include="ValueTypes\ISymbolValue.cs" />
     <Compile Include="ValueTypes\ITopValue.cs" />

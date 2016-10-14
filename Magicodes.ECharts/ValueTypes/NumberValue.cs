@@ -21,9 +21,16 @@ namespace Magicodes.ECharts.ValueTypes
     /// <summary>
     ///     数值
     /// </summary>
-    [JsonConverter(typeof(ValueConverter<int>))]
-    public class NumberValue : ILeftValue, ITopValue, IRightValue, IBottomValue, IValue<int>
+    [JsonConverter(typeof(ValueConverter<double>))]
+    public class NumberValue : ILeftValue, ITopValue, IRightValue, IBottomValue, IValue<double>, INumberOrArrayNumberValue, INumberOrStringValue
     {
-        public int Value { get; set; }
+        public NumberValue(double? value = null)
+        {
+            if (value.HasValue)
+            {
+                Value = value.Value;
+            }
+        }
+        public double Value { get; set; }
     }
 }

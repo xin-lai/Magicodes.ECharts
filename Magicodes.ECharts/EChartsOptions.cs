@@ -20,6 +20,9 @@ using Magicodes.ECharts.Components.TimeLine;
 using Magicodes.ECharts.Components.Title;
 using Magicodes.ECharts.Components.ToolBox;
 using Magicodes.ECharts.Components.ToolTip;
+using Magicodes.ECharts.Components.DataZoom;
+using System.Collections.Generic;
+using Magicodes.ECharts.Components.Grid;
 
 namespace Magicodes.ECharts
 {
@@ -72,6 +75,14 @@ namespace Magicodes.ECharts
         ///     系列列表
         /// </summary>
         public Series.Series[] Series { get; set; }
+        /// <summary>
+        /// dataZoom 组件 用于区域缩放，从而能自由关注细节的数据信息，或者概览数据整体，或者去除离群点的影响。
+        /// </summary>
+        public List<DataZoom> DataZoom { get; set; }
 
+        /// <summary>
+        /// 网格组件列表
+        /// </summary>
+        public List<Grid> Grid { get; set; }
     }
 }

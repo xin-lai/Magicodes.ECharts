@@ -1,7 +1,14 @@
 ﻿@{
     ViewBag.Title = "Magicodes.ECharts";
 }
-
+@section Scripts
+{
+    <script>
+        $(function () {
+            ko.applyBindings({});
+        });
+    </script>
+}
 <div class="jumbotron">
     <h1>Magicodes.ECharts</h1>
     <p class="lead">Magicodes.ECharts是心莱团队基于EChart封装的.NET类库，以便让用户更快更便捷的上手开发EChart图表。</p>
@@ -27,5 +34,22 @@
         <h2>官网</h2>
         @*<p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>*@
         <p><a class="btn btn-default" href="http://xin-lai.com">点此访问 &raquo;</a></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Demo1</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo1" ,theme:"macarons"}}' style="height: 280px; width: 100%"></div>
+    </div>
+    <div class="col-md-6">
+        <h2>Demo2</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo2" ,theme:"macarons"}}' style="height: 280px; width: 100%"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Demo3</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo3" ,theme:"macarons"}}' style="width: 100%"></div>
     </div>
 </div>
