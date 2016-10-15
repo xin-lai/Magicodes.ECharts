@@ -30,12 +30,12 @@ namespace Magicodes.ECharts.JsonConverter
             if (iv.Value is double[])
             {
                 var values = iv.Value as double[];
-                var sb = new StringBuilder("[");
+                writer.WriteStartArray();
                 foreach (var item in values)
                 {
-                    sb.Append(item).Append(",");
+                    writer.WriteValue(item);
                 }
-                writer.WriteValue(sb.ToString().TrimEnd(',') + "]");
+                writer.WriteEndArray();
                 return;
             }
             writer.WriteValue(iv.Value.ToString());
