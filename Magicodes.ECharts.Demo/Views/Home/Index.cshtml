@@ -5,7 +5,19 @@
 {
     <script>
         $(function () {
-            ko.applyBindings({});
+            var viewModel = function () {
+                var self = this;
+                this.demo4Url = ko.observable('/ChartDemo/Demo1');
+                this.init = function () {
+                    //设置定时器
+                    setInterval(function () {
+                        //可以通过Url传参
+                        self.demo4Url(self.demo4Url() == '/ChartDemo/Demo1' ? '/ChartDemo/Demo2' : '/ChartDemo/Demo1');
+                    }, 2000);
+                };
+                self.init();
+            };
+            ko.applyBindings(new viewModel());
         });
     </script>
 }
@@ -19,10 +31,10 @@
     <div class="col-md-4">
         <h2>开源库地址</h2>
         @*<p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>*@
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>*@
         <p><a class="btn btn-default" href="https://github.com/xin-lai">点此访问 &raquo;</a></p>
     </div>
     <div class="col-md-4">
@@ -39,17 +51,23 @@
 
 <div class="row">
     <div class="col-md-6">
-        <h2>Demo1</h2>
+        <h2>Demo1——柱状图</h2>
         <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo1" ,theme:"macarons"}}' style="height: 280px; width: 100%"></div>
     </div>
     <div class="col-md-6">
-        <h2>Demo2</h2>
+        <h2>Demo2——饼图</h2>
         <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo2" ,theme:"macarons"}}' style="height: 280px; width: 100%"></div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <h2>Demo3</h2>
-        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo3" ,theme:"macarons"}}' style="height: 800px;width: 100%"></div>
+        <h2>Demo3——复杂图</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: "/ChartDemo/Demo3" ,theme:"macarons"}}' style="height: 600px;width: 100%"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Demo4——动态图</h2>
+        <div data-bind='component:{name: "echart",params: { ajaxUrl: demo4Url ,theme:"macarons"}}' style="height: 400px;width: 100%"></div>
     </div>
 </div>
