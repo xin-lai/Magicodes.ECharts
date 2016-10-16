@@ -27,7 +27,7 @@ using Magicodes.ECharts.Components.Grid;
 namespace Magicodes.ECharts
 {
     /// <summary>
-    ///     EChart配置
+    ///     EChart相关配置
     /// </summary>
     public class EChartsOption
     {
