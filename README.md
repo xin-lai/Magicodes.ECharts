@@ -1,6 +1,7 @@
 # Magicodes.ECharts
 Magicodes.ECharts是心莱团队基于百度EChart封装的开源的.NET类库，以便让用户更快更便捷的上手开发EChart图表。
 相关资料请访问我们的官方博客。
+* 使用教程：http://www.cnblogs.com/codelove/p/5969036.html
 * 官方博客：http://www.cnblogs.com/codelove/ 
 * 相关开源库地址：https://github.com/xin-lai 
 * 我们的官网：http://xin-lai.com
